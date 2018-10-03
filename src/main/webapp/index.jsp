@@ -12,6 +12,7 @@
   <a href="/hello">Hello link</a><BR>
   <a href="/iterator">Iterator link</a><BR>
   <a href="/students">Students</a><BR>
+  <a href="/login">Login</a><BR>
   <a href="/addstudentform">AddStudent</a><BR><BR>
   <form method="post" action="/hello">
     <input type="text" name="testText">

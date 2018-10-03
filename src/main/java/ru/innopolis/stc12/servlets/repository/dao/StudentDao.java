@@ -1,7 +1,12 @@
 package ru.innopolis.stc12.servlets.repository.dao;
 
 import ru.innopolis.stc12.servlets.pojo.Student;
+import ru.innopolis.stc12.servlets.pojo.User;
+import ru.innopolis.stc12.servlets.repository.connectionManager.ConnectionManager;
+import ru.innopolis.stc12.servlets.repository.connectionManager.ConnectionManagerJdbcImpl;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.List;
 
 public interface StudentDao {
@@ -14,4 +19,6 @@ public interface StudentDao {
     boolean deleteStudentById(int id);
 
     List<Student> getAllStudents();
+
+
 }

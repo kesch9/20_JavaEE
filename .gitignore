@@ -5,3 +5,5 @@
 /build
 *.iml
 
+src/main/webapp/META-INF/
+src/test/
