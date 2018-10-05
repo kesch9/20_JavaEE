@@ -117,7 +117,7 @@ public class StudentDaoImpl implements StudentDao {
         ) {
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
-                    System.out.println("*****************");
+                    System.out.println("---");
                     result.add(StudentMapper.getStudentFromResultSet(resultSet));
                 }
             }

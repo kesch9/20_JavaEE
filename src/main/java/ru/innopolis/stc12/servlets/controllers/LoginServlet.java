@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         }
 
         if(req.getSession().getAttribute("login")!=null){
-            resp.sendRedirect("/inner/dashboard");
+            resp.sendRedirect("/admin.jsp");
         } else {
             req.getRequestDispatcher("/login.jsp" ).forward(req, resp);
         }
@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
             int role = userService.getRole(login);
             req.getSession().setAttribute("login",login);
             req.getSession().setAttribute("role",role);
-            resp.sendRedirect("/inner/dashboard");
+            resp.sendRedirect("/admin.jsp");
         } else {
             resp.sendRedirect("/login?action=wrongUser");
         }

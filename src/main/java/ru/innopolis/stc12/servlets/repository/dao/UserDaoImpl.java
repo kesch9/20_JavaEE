@@ -17,9 +17,9 @@ public class UserDaoImpl implements UserDao{
         try {
             try (Connection connection = connectionManager.getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(
-                         "SELECT * FROM \"user\" WHERE \"user\".login = ?");) {
+                         "SELECT * FROM \"users\" WHERE \"users\".user_name = ?")) {
                 preparedStatement.setString(1, login);
-                try (ResultSet resultSet = preparedStatement.executeQuery();) {
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     if (resultSet.next()) {
                         return new User(resultSet.getInt(1),
                                 resultSet.getString(2),

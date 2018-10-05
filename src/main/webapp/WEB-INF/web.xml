@@ -66,4 +66,23 @@
         <url-pattern>/inner/dashboard</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Administrator</servlet-name>
+        <servlet-class>ru.innopolis.stc12.servlets.controllers.AdministratorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Administrator</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>ru.innopolis.stc12.servlets.controllers.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/deletestudentform</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

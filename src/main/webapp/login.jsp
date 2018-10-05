@@ -15,9 +15,9 @@
         <div style="color: #AA0000">Неверное имя пользователя</div>
 <%}%>
 <form action="/login" method="post">
-    Логин:<<br>
+    Логин:<br>
     <input type="text" name = "login">
-    Пароль:<<br>
+    Пароль:<br>
     <input type="password" name="password">
     <input type="submit">
 </form>

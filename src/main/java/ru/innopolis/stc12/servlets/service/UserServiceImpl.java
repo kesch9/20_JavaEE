@@ -38,4 +38,10 @@ public class UserServiceImpl implements UserService {
         }
         return false;
     }
+
+//    public static void main(String[] args) {
+//        System.out.println(HashUtil.stringToMD5("2222"));
+//
+//    }
+
 }

@@ -22,4 +22,8 @@ public class StudentServiceImpl implements StudentService {
 
         return studentDao.getAllStudents();
     }
+
+    public boolean deleteStudent(String Id){
+        return studentDao.deleteStudentById(Integer.parseInt(Id));
+    }
 }
